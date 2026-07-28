@@ -1,6 +1,6 @@
 # The Lockdown Index — DH101 Group 4 mini-site (draft skeleton)
 
-A draft GitHub Pages version of the World Happiness Report mini-site, to compare against the Wordspace build.
+Almost finished draft, for DH101
 
 ## What's here
 - `index.html` — home page, hero (design changed), research questions
