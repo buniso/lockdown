@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narrative — The Lockdown Index</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-nav">
+  <div class="wide">
+    <a class="brand" href="index.html">
+      <span class="brand-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#FF8A3D" stroke="#5C4A34" stroke-width="1.3"/><circle cx="8.5" cy="10" r="1.2" fill="#5C4A34"/><circle cx="15.5" cy="10" r="1.2" fill="#5C4A34"/><path d="M8 14.5Q12 17.5 16 14.5" stroke="#5C4A34" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg></span>
+      The Lockdown Index
+    </a>
+    <nav>
+      <a href="index.html"><svg class="ico" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"/><circle cx="6" cy="7" r="0.8" fill="currentColor"/><circle cx="10" cy="7" r="0.8" fill="currentColor"/><path d="M5.5 9.5Q8 11.5 10.5 9.5" stroke="currentColor" stroke-width="1.1" fill="none" stroke-linecap="round"/></svg>Home</a>
+      <a href="narrative.html"><svg class="ico" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="4" width="13" height="8" rx="1" stroke="currentColor" stroke-width="1.3"/><circle cx="5.5" cy="8" r="1.6" stroke="currentColor" stroke-width="1.1"/><circle cx="10.5" cy="8" r="1.6" stroke="currentColor" stroke-width="1.1"/></svg>Narrative</a>
+      <a href="bibliography.html"><svg class="ico" viewBox="0 0 16 16" fill="none"><path d="M8 3.5C6.8 2.6 4.8 2.4 2 3v9c2.8-.6 4.8-.4 6 .5 1.2-.9 3.2-1.1 6-.5V3c-2.8-.6-4.8-.4-6 .5Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/><path d="M8 3.5v9" stroke="currentColor" stroke-width="1.1"/></svg>Bibliography</a>
+      <a href="data-critique.html"><svg class="ico" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.3"/><path d="M10.3 10.3 14 14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>Data Critique</a>
+      <a href="about.html"><svg class="ico" viewBox="0 0 16 16" fill="none"><path d="M8 13.5S1.8 9.9 1.8 5.9C1.8 3.9 3.3 2.5 5.1 2.5c1.1 0 2.1.6 2.9 1.6.8-1 1.8-1.6 2.9-1.6 1.8 0 3.3 1.4 3.3 3.4 0 4-6.2 7.6-6.2 7.6Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>About</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="narrative-toc" aria-label="Jump to section">
+
+  <!-- Desktop: floating Animal Crossing-style dialogue menu, sticky to the side -->
+  <div class="ac-menu">
+    <div class="ac-panel">
+      <svg class="ac-panel-bg" viewBox="0 0 208 280" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M46.0,16.0 C84.3,12.0 122.6,20.0 162.0,16.0 C178.6,16.0 192.0,29.4 192.0,46.0 C185.0,108.0 199.0,170.1 192.0,234.0 C192.0,250.6 178.6,264.0 162.0,264.0 C123.7,260.0 85.4,268.0 46.0,264.0 C29.4,264.0 16.0,250.6 16.0,234.0 C11.0,172.0 21.0,109.9 16.0,46.0 C16.0,29.4 29.4,16.0 46.0,16.0 Z" fill="#FBE28A"/>
+      </svg>
+      <ul class="ac-panel-list">
+        <li><a href="#introduction"><span class="ac-cursor"><svg viewBox="0 0 24 20"><path d="M2 8c0-3 2-5 5-5h2c2 0 3 1 3 3v1h5c2 0 3 1 3 3s-1 3-3 3H10v1c0 2-2 3-4 3H6c-2 0-4-2-4-4V8z" fill="#fff" stroke="#3C2D1C" stroke-width="1.2" stroke-linejoin="round"/></svg></span><span class="ac-label">Intro</span></a></li>
+        <li><a href="#lit-review"><span class="ac-cursor"><svg viewBox="0 0 24 20"><path d="M2 8c0-3 2-5 5-5h2c2 0 3 1 3 3v1h5c2 0 3 1 3 3s-1 3-3 3H10v1c0 2-2 3-4 3H6c-2 0-4-2-4-4V8z" fill="#fff" stroke="#3C2D1C" stroke-width="1.2" stroke-linejoin="round"/></svg></span><span class="ac-label">Lit Review</span></a></li>
+        <li><a href="#significance"><span class="ac-cursor"><svg viewBox="0 0 24 20"><path d="M2 8c0-3 2-5 5-5h2c2 0 3 1 3 3v1h5c2 0 3 1 3 3s-1 3-3 3H10v1c0 2-2 3-4 3H6c-2 0-4-2-4-4V8z" fill="#fff" stroke="#3C2D1C" stroke-width="1.2" stroke-linejoin="round"/></svg></span><span class="ac-label">Significance</span></a></li>
+        <li><a href="#rq1"><span class="ac-cursor"><svg viewBox="0 0 24 20"><path d="M2 8c0-3 2-5 5-5h2c2 0 3 1 3 3v1h5c2 0 3 1 3 3s-1 3-3 3H10v1c0 2-2 3-4 3H6c-2 0-4-2-4-4V8z" fill="#fff" stroke="#3C2D1C" stroke-width="1.2" stroke-linejoin="round"/></svg></span><span class="ac-label">RQ1 · GDP</span></a></li>
+        <li><a href="#rq2"><span class="ac-cursor"><svg viewBox="0 0 24 20"><path d="M2 8c0-3 2-5 5-5h2c2 0 3 1 3 3v1h5c2 0 3 1 3 3s-1 3-3 3H10v1c0 2-2 3-4 3H6c-2 0-4-2-4-4V8z" fill="#fff" stroke="#3C2D1C" stroke-width="1.2" stroke-linejoin="round"/></svg></span><span class="ac-label">RQ2 · The Gap</span></a></li>
+        <li><a href="#rq3"><span class="ac-cursor"><svg viewBox="0 0 24 20"><path d="M2 8c0-3 2-5 5-5h2c2 0 3 1 3 3v1h5c2 0 3 1 3 3s-1 3-3 3H10v1c0 2-2 3-4 3H6c-2 0-4-2-4-4V8z" fill="#fff" stroke="#3C2D1C" stroke-width="1.2" stroke-linejoin="round"/></svg></span><span class="ac-label">RQ3 · Africa</span></a></li>
+        <li><a href="#map"><span class="ac-cursor"><svg viewBox="0 0 24 20"><path d="M2 8c0-3 2-5 5-5h2c2 0 3 1 3 3v1h5c2 0 3 1 3 3s-1 3-3 3H10v1c0 2-2 3-4 3H6c-2 0-4-2-4-4V8z" fill="#fff" stroke="#3C2D1C" stroke-width="1.2" stroke-linejoin="round"/></svg></span><span class="ac-label">Map</span></a></li>
+        <li><a href="#conclusion"><span class="ac-cursor"><svg viewBox="0 0 24 20"><path d="M2 8c0-3 2-5 5-5h2c2 0 3 1 3 3v1h5c2 0 3 1 3 3s-1 3-3 3H10v1c0 2-2 3-4 3H6c-2 0-4-2-4-4V8z" fill="#fff" stroke="#3C2D1C" stroke-width="1.2" stroke-linejoin="round"/></svg></span><span class="ac-label">Conclusion</span></a></li>
+      </ul>
+    </div>
+
+    <div class="ac-speech-wrap">
+      <svg class="ac-speech-bg" viewBox="0 0 208 70" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M37.0,9.0 C81.2,6.0 125.4,12.0 171.0,9.0 C182.6,9.0 192.0,18.4 192.0,30.0 C188.0,30.7 196.0,31.3 192.0,32.0 C192.0,43.6 182.6,53.0 171.0,53.0 C126.8,50.0 82.6,56.0 37.0,53.0 C25.4,53.0 16.0,43.6 16.0,32.0 C12.0,31.3 20.0,30.7 16.0,30.0 C16.0,18.4 25.4,9.0 37.0,9.0 Z" fill="#FDF6DC"/>
+      </svg>
+      <div class="ac-nameplate">Group 4</div>
+      <div class="ac-speech-text"><img src="assets/img/ac-icons/icon-chat.svg" alt="" class="speech-icon">Menu</div>
+    </div>
+  </div>
+
+  <!-- Mobile/tablet: simplified sticky pill bar (no room for the full widget) -->
+  <div class="toc-mobile">
+    <div class="toc-box">
+      <div class="toc-panel">
+        <div class="toc-row">
+          <span class="toc-label">Jump to</span>
+          <a href="#introduction">Intro</a>
+          <a href="#lit-review">Lit Review</a>
+          <a href="#significance">Significance</a>
+          <a href="#rq1">RQ1 · GDP</a>
+          <a href="#rq2">RQ2 · The Gap</a>
+          <a href="#rq3">RQ3 · Sub-Saharan Africa</a>
+          <a href="#map">Map</a>
+          <a href="#conclusion">Conclusion</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<button class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 16 16" fill="none"><path d="M8 13V3M8 3 3.5 7.5M8 3l4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<section class="wrap reveal" style="padding-top:50px;">
+  <span class="eyebrow" style="display:block; margin-bottom:10px;">Narrative</span>
+  <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">What actually makes a country happy?</h1>
+
+  <!-- ===================== INTRODUCTION ===================== -->
+  <h2 id="introduction">Introduction</h2>
+  <p><em>— section lead: Yihan</em></p>
+  <p>When discussing people's satisfaction with their lives, we consider money, freedom, safety, employment status, etc. However, sometimes we never know what people's lives are like in different regions. There are constant discussions about certain areas' GDP and determining people's life satisfaction; without a doubt, it is superficial, but how do we know what makes us happy? The World Happiness Report researched citizens' responses to happiness by conducting a survey individually. Each respondent ranked their happiness and satisfaction with their own life from worst (0) to best (10), which are called ladder scores. The research examines what the ladder scores capture, what affects them, and what is not represented. Wealth certainly captures and predicts happiness, but it does not fully explain it. Logged GDP per capita is one of the strongest metrics of a country's average ladder score, yet social support, freedom, and generosity account for much of the variation. For example, Sub-Saharan Africa, where scores diverge moderately from economic situations, places more weight on other metrics such as cultural difference and social connectedness.</p>
+  <p>Our data come from the World Happiness Report 2020, published by the UN Sustainable Development Network, which was sourced from the Gallup World Poll Surveys with the Cantril-ladder scores, along with other variables such as logged GDP per capita, social support, and healthy life expectancy, freedom to make life choices, generosity, and perceptions of corruption, etc. The data set provides a relatively subjective and standardized measure of a country's situation that can help us analyze what happiness entails and the limitations of the standardized variables.</p>
+
+  <!-- ===================== TIMELINE ===================== -->
+  <div class="timeline-slot reveal">
+    <h4>Timeline — Jae Vin</h4>
+    <p>Embed a TimelineJS (or similar) timeline here tracing key moments in the World Happiness Report / Gallup World Poll's history (2005 Gallup World Poll begins → 2012 first WHR → 2019 Wellbeing Research Centre founded → 2020 report, pre-pandemic baseline).</p>
+    <p style="font-size:0.85rem; opacity:0.75;">Replace this block with an &lt;iframe&gt; embed once the timeline is built: <br><code>&lt;iframe src="YOUR_TIMELINE_EMBED_URL" width="100%" height="500" frameborder="0"&gt;&lt;/iframe&gt;</code></p>
+  </div>
+
+  <!-- ===================== LIT REVIEW ===================== -->
+  <h2 id="lit-review">Literature Review</h2>
+  <p><em>— section lead: Xinyi</em></p>
+  <p>In recent discussions of global happiness, an issue has been whether economic prosperity alone can explain differences in national well-being. On the one hand, some scholars argue that income remains the strongest and most reliable predictor of happiness: Connolly, Hjerm, and Garling (2026) and Schyns (1998) both find that economic development is positively and consistently linked to life satisfaction across dozens of countries. From this perspective, wealth captures most of what matters: basic goods, opportunities, stability. On the other hand, however, others argue that this relationship weakens once basic needs are met, and that non-economic factors carry equal or greater explanatory power. Proto and Rustichini (2013), one of this view's main proponents, find that the GDP–happiness relationship "flattens and even declines" among the wealthiest nations, while Diener et al. (2010) show that material prosperity predicts life evaluation but fails to predict positive daily feeling, which is instead tied to social support, respect, and freedom. According to these sources, GDP is a necessary but insufficient variable.</p>
+  <p>Helliwell and Putnam (2004), Portela, Neira, and Salinas-Jimenez (2013), and Aknin et al. (2013) all demonstrate that social capital, trust, and generosity independently predict well-being, while Hu, Wang, and Xu (2021) complicate even this claim by showing that social support's effect is significant only in high-income countries, meaning no single non-economic factor is universally reliable either. In sum, then, the issue is whether happiness is best explained by economic conditions or by the social and cultural fabric surrounding them.</p>
+  <p>Sub-Saharan Africa sits at the center of this debate. Greyling, Rossouw, and Burger (2026) and Gebeyehu et al. (2026) attribute the region's persistent gap between predicted and reported happiness to community, spirituality, and family support systems. Yet Tov and Diener (2009) and Pflug (2008) caution that this divergence may partly reflect how happiness itself is culturally conceptualized rather than a true gap in well-being, raising doubts about whether standardized ladder scores measure an identical construct across regions. What remains underexplored, then, is how these competing economic, social, and cultural explanations interact simultaneously within a single standardized dataset like the World Happiness Report — particularly in Sub-Saharan Africa, where the divide between economic prediction and lived happiness is most visible and least resolved.</p>
+
+  <!-- ===================== SIGNIFICANCE ===================== -->
+  <h2 id="significance">Significance</h2>
+  <p><em>— section lead: Xinyi</em></p>
+  <p>We are working on visualizing and analyzing the relationship between economic prosperity and happiness across the World Happiness Report 2020 dataset because we want to find out why countries with comparable GDP levels, particularly across Sub-Saharan Africa, report markedly different happiness scores than their economic conditions alone would predict, so that we can help others understand that national well-being cannot be reduced to a single standardized metric, but instead emerges from the interaction of economic, social, and cultural conditions specific to each region.</p>
+  <p>While the literature offers strong theoretical arguments on both sides of the GDP debate, few studies bring these explanations together within a single dataset to map where and how far happiness departs from economic prediction, and fewer still isolate Sub-Saharan Africa as a region where this gap is visible. This project addresses that gap by comparing each country's actual ladder score against a GDP-based prediction, and then identifying countries that do not fit the expectation in terms of income for further exploration. It extends beyond the debate: international organizations and policymakers frequently rely on economic growth as a signal/shorthand for national progress, and when GDP is treated as sufficient evidence of a population's well-being, factors like social support, freedom, and culture are left out of policy. This project contributes to a more understandable representation of what actually improves people's lives, and cautions against relying on any single standardized measure to capture something as complex as well-being.</p>
+
+  <!-- ===================== RQ1 ===================== -->
+  <h2 id="rq1">Research Question 1: How well does GDP predict happiness?</h2>
+  <div class="viz-grid reveal">
+    <div class="viz-slot"><h4>Visualization 1</h4><p>Scatter plot: logged GDP per capita vs. ladder score, all countries, with a fitted prediction line.</p></div>
+    <div class="viz-slot"><h4>Visualization 2</h4><p>Residual chart: countries ranked by gap between actual and predicted ladder score.</p></div>
+  </div>
+
+  <!-- ===================== RQ2 ===================== -->
+  <h2 id="rq2">Research Question 2: What explains the gap?</h2>
+  <div class="viz-grid reveal">
+    <div class="viz-slot"><h4>Visualization 3</h4><p>Small multiples: social support, freedom, and generosity vs. residual (GDP-prediction gap).</p></div>
+    <div class="viz-slot"><h4>Visualization 4</h4><p>Stacked bar or radar chart comparing the six WHR factors for a handful of over/under-performing countries.</p></div>
+  </div>
+
+  <!-- ===================== RQ3 ===================== -->
+  <h2 id="rq3">Research Question 3: Sub-Saharan Africa's divergence</h2>
+  <div class="viz-grid reveal">
+    <div class="viz-slot"><h4>Visualization 5</h4><p>Regional comparison chart: average GDP-prediction gap by world region, Sub-Saharan Africa highlighted.</p></div>
+    <div class="viz-slot"><h4>Visualization 6 (optional / 5th+)</h4><p>Country-level detail chart for a small set of Sub-Saharan African case studies.</p></div>
+  </div>
+
+  <div class="map-slot reveal" id="map">
+    <h4><img src="assets/img/ac-icons/icon-map.svg" alt="" class="slot-icon">Map</h4>
+    <p>World map (choropleth) shading each country by its GDP-prediction gap — the visual anchor for the Sub-Saharan Africa argument.</p>
+  </div>
+
+  <h2 id="conclusion">Conclusion</h2>
+  <div class="card card-lifted reveal">
+    <p><em>Placeholder — tie the three research questions back to the thesis: happiness is not reducible to GDP, and the sharpest evidence for that is the Sub-Saharan African "happiness paradox."</em></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">DGTHUM101 · Group 4 · World Happiness Report 2020</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

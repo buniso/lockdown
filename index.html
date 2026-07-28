@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Lockdown Index — GDP, Happiness, and the World Happiness Report</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-nav">
+  <div class="wide">
+    <a class="brand" href="index.html">
+      <span class="brand-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#FF8A3D" stroke="#5C4A34" stroke-width="1.3"/><circle cx="8.5" cy="10" r="1.2" fill="#5C4A34"/><circle cx="15.5" cy="10" r="1.2" fill="#5C4A34"/><path d="M8 14.5Q12 17.5 16 14.5" stroke="#5C4A34" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg></span>
+      The Lockdown Index
+    </a>
+    <nav>
+      <a href="index.html"><svg class="ico" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"/><circle cx="6" cy="7" r="0.8" fill="currentColor"/><circle cx="10" cy="7" r="0.8" fill="currentColor"/><path d="M5.5 9.5Q8 11.5 10.5 9.5" stroke="currentColor" stroke-width="1.1" fill="none" stroke-linecap="round"/></svg>Home</a>
+      <a href="narrative.html"><svg class="ico" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="4" width="13" height="8" rx="1" stroke="currentColor" stroke-width="1.3"/><circle cx="5.5" cy="8" r="1.6" stroke="currentColor" stroke-width="1.1"/><circle cx="10.5" cy="8" r="1.6" stroke="currentColor" stroke-width="1.1"/></svg>Narrative</a>
+      <a href="bibliography.html"><svg class="ico" viewBox="0 0 16 16" fill="none"><path d="M8 3.5C6.8 2.6 4.8 2.4 2 3v9c2.8-.6 4.8-.4 6 .5 1.2-.9 3.2-1.1 6-.5V3c-2.8-.6-4.8-.4-6 .5Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/><path d="M8 3.5v9" stroke="currentColor" stroke-width="1.1"/></svg>Bibliography</a>
+      <a href="data-critique.html"><svg class="ico" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.3"/><path d="M10.3 10.3 14 14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>Data Critique</a>
+      <a href="about.html"><svg class="ico" viewBox="0 0 16 16" fill="none"><path d="M8 13.5S1.8 9.9 1.8 5.9C1.8 3.9 3.3 2.5 5.1 2.5c1.1 0 2.1.6 2.9 1.6.8-1 1.8-1.6 2.9-1.6 1.8 0 3.3 1.4 3.3 3.4 0 4-6.2 7.6-6.2 7.6Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="sticker-field ambient" aria-hidden="true">
+    <!-- a second, sparser layer of faces drifting near the research-question
+         cards further down the hero — same scroll-driven flip, just planted
+         further out in the dark margin so it doesn't crowd the title -->
+    <div class="sticker" style="width:44px;height:44px; top:56%; left:1%;" data-phase="0.35" data-speed="1" data-drift="14">
+      <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="92" fill="#3FB8C9"/><circle cx="68" cy="80" r="9" fill="#5C4A34"/><circle cx="132" cy="80" r="9" fill="#5C4A34"/><path class="mouth" d="M 65 125 Q 100 155 135 125" stroke="#5C4A34" stroke-width="8" fill="none" stroke-linecap="round"/></svg>
+    </div>
+    <div class="sticker" style="width:38px;height:38px; top:78%; left:6%;" data-phase="0.55" data-speed="1.2" data-drift="-10">
+      <img src="https://i.postimg.cc/xjRk6FNy/trashbagnin.png" alt="" style="width:100%;height:100%;object-fit:contain;" />
+    </div>
+    <div class="sticker" style="width:46px;height:46px; top:60%; right:1%;" data-phase="0.4" data-speed="0.95" data-drift="-16">
+      <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="92" fill="#FF8A3D"/><circle cx="68" cy="80" r="9" fill="#5C4A34"/><circle cx="132" cy="80" r="9" fill="#5C4A34"/><path class="mouth" d="M 65 125 Q 100 155 135 125" stroke="#5C4A34" stroke-width="8" fill="none" stroke-linecap="round"/></svg>
+    </div>
+    <div class="sticker" style="width:40px;height:40px; top:82%; right:7%;" data-phase="0.6" data-speed="1.1" data-drift="12">
+      <img src="https://i.postimg.cc/xjRk6FNy/trashbagnin.png" alt="" style="width:100%;height:100%;object-fit:contain;" />
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="title-orbit">
+      <span class="eyebrow">World Happiness Report · 2019–2020</span>
+      <h1>What actually makes a country happy?</h1>
+
+      <div class="sticker-field" aria-hidden="true">
+        <!-- each face/icon flips grin-to-frown at its own pace as you scroll, ringed
+             around the title like stickers pressed onto the edges of a moodboard -->
+
+        <div class="sticker" style="top:-4%; left:-2%;" data-phase="0" data-speed="1.3" data-drift="18">
+          <img src="https://i.postimg.cc/xjRk6FNy/trashbagnin.png" alt="" style="width:100%;height:100%;object-fit:contain;" />
+        </div>
+
+        <div class="sticker" style="top:-8%; right:-3%;" data-phase="0.15" data-speed="1.1" data-drift="-14">
+          <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="92" fill="#3FB8C9"/><circle cx="68" cy="80" r="9" fill="#5C4A34"/><circle cx="132" cy="80" r="9" fill="#5C4A34"/><path class="mouth" d="M 65 125 Q 100 155 135 125" stroke="#5C4A34" stroke-width="8" fill="none" stroke-linecap="round"/></svg>
+        </div>
+
+        <div class="sticker" style="width:52px;height:52px; bottom:-8%; left:4%;" data-phase="0.3" data-speed="0.9" data-drift="24">
+          <img src="https://i.postimg.cc/xjRk6FNy/trashbagnin.png" alt="" style="width:100%;height:100%;object-fit:contain;" />
+        </div>
+
+        <div class="sticker" style="width:50px;height:50px; top:-12%; left:44%;" data-phase="0.45" data-speed="1.2" data-drift="-10">
+          <img src="https://i.postimg.cc/xjRk6FNy/trashbagnin.png" alt="" style="width:100%;height:100%;object-fit:contain;" />
+        </div>
+
+        <div class="sticker" style="width:46px;height:46px; bottom:-10%; right:2%;" data-phase="0.6" data-speed="1" data-drift="16">
+          <img src="https://i.postimg.cc/xjRk6FNy/trashbagnin.png" alt="" style="width:100%;height:100%;object-fit:contain;" />
+        </div>
+
+        <div class="sticker" style="top:36%; left:-6%;" data-phase="0.2" data-speed="1.4" data-drift="-20">
+          <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="92" fill="#FF5FA8"/><circle cx="68" cy="80" r="9" fill="#5C4A34"/><circle cx="132" cy="80" r="9" fill="#5C4A34"/><path class="mouth" d="M 65 125 Q 100 155 135 125" stroke="#5C4A34" stroke-width="8" fill="none" stroke-linecap="round"/></svg>
+        </div>
+
+        <div class="sticker" style="width:48px;height:48px; top:40%; right:-6%;" data-phase="0.5" data-speed="1" data-drift="12">
+          <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="92" fill="#3FB8C9"/><circle cx="68" cy="80" r="9" fill="#5C4A34"/><circle cx="132" cy="80" r="9" fill="#5C4A34"/><path class="mouth" d="M 65 125 Q 100 155 135 125" stroke="#5C4A34" stroke-width="8" fill="none" stroke-linecap="round"/></svg>
+        </div>
+
+        <div class="sticker" style="width:42px;height:42px; top:-14%; left:12%;" data-phase="0.7" data-speed="1.25" data-drift="-8">
+          <img src="https://i.postimg.cc/xjRk6FNy/trashbagnin.png" alt="" style="width:100%;height:100%;object-fit:contain;" />
+        </div>
+
+        <div class="sticker" style="width:40px;height:40px; bottom:-6%; left:66%;" data-phase="0.1" data-speed="0.85" data-drift="20">
+          <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="92" fill="#FF5FA8"/><circle cx="68" cy="80" r="9" fill="#5C4A34"/><circle cx="132" cy="80" r="9" fill="#5C4A34"/><path class="mouth" d="M 65 125 Q 100 155 135 125" stroke="#5C4A34" stroke-width="8" fill="none" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <p class="sub">A data narrative built on the World Happiness Report 2020: tracing where the Cantril ladder and lived experience line up, and where GDP alone stops telling the whole story.</p>
+
+    <ul class="rq-list">
+      <li>
+        <span class="rq-tag">Research Question 01</span>
+        How well does logged GDP per capita predict a country's ladder score, and where does the prediction break down?
+      </li>
+      <li>
+        <span class="rq-tag">Research Question 02</span>
+        Which non-economic factors — social support, freedom, generosity — explain the gap when GDP falls short?
+      </li>
+      <li>
+        <span class="rq-tag">Research Question 03</span>
+        Why does Sub-Saharan Africa show some of the widest, and most debated, divergence between predicted and reported happiness?
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="ladder-strip">
+  <div class="ladder-track"></div>
+  <div class="ladder-labels"><span>0 · worst possible life</span><span>10 · best possible life</span></div>
+</div>
+
+<div class="shore-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,42 C120,10 240,72 360,42 C480,10 600,72 720,42 C840,10 960,72 1080,42 C1200,10 1320,72 1440,42 L1440,80 L0,80 Z" fill="#F3E8D2"/></svg>
+</div>
+
+<div class="island">
+
+<section class="wrap reveal">
+  <div class="card card-lifted">
+    <h2 style="margin-top:0">The short version</h2>
+    <p>When discussing people's satisfaction with their lives, we consider money, freedom, safety, employment status, and more — yet GDP is still the number most often used to stand in for all of it. This project compares each country's actual ladder score against a GDP-based prediction, then looks closely at the countries — especially across Sub-Saharan Africa — that don't fit the expectation.</p>
+    <p><a class="btn-lifted" href="narrative.html">Read the full narrative →</a></p>
+  </div>
+</section>
+
+<section class="wrap reveal">
+  <span class="rq-tag">🏝️ Preview</span>
+  <h2>The world, one square at a time</h2>
+  <p>A preview of the countries whose lived happiness diverges most from what their GDP alone would predict (swap these placeholders for real postcards pls)</p>
+  <div class="postcard-grid">
+    <div class="postcard"><span class="stamp">07.20</span><span class="country">Country 01</span></div>
+    <div class="postcard"><span class="stamp">07.20</span><span class="country">Country 02</span></div>
+    <div class="postcard"><span class="stamp">07.20</span><span class="country">Country 03</span></div>
+    <div class="postcard"><span class="stamp">07.20</span><span class="country">Country 04</span></div>
+    <div class="postcard"><span class="stamp">07.20</span><span class="country">Country 05</span></div>
+    <div class="postcard"><span class="stamp">07.20</span><span class="country">Country 06</span></div>
+    <div class="postcard"><span class="stamp">07.20</span><span class="country">Country 07</span></div>
+    <div class="postcard"><span class="stamp">07.20</span><span class="country">Country 08</span></div>
+    <div class="postcard"><span class="stamp">07.20</span><span class="country">Country 09</span></div>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">DGTHUM101 · Group 4 · World Happiness Report · est. 2020</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
