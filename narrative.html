@@ -132,18 +132,28 @@
     </figure>
   </div>
 
-  <!-- ===================== RQ3 ===================== -->
-  <h2 id="rq3">Research Question 3: Sub-Saharan Africa's divergence</h2>
-  <div class="viz-grid reveal">
-    <figure class="viz-figure">
-      <img src="https://i.postimg.cc/fRvSF8rN/05-average-prediction-gap-by-region.png" alt="Bar chart of average GDP-prediction gap by world region, Sub-Saharan Africa highlighted">
-      <figcaption>Average GDP-prediction gap by world region, Sub-Saharan Africa highlighted.</figcaption>
-    </figure>
-    <figure class="viz-figure">
-      <img src="https://i.postimg.cc/YCxLVdsp/06-sub-saharan-africa-case-studies.png" alt="Country-level detail chart for Sub-Saharan African case studies, Ivory Coast and Zambia">
-      <figcaption>Case study: Ivory Coast and Zambia — nearly identical GDP, very different outcomes.</figcaption>
-    </figure>
+  <h2 id="rq3">Why does Sub-Saharan Africa show some of the widest, and most debated, divergence between predicted and reported happiness? A Case Study on the Ivory Coast &amp; Zambia.</h2>
+
+  <h3>What is residual happiness?</h3>
+  <p>While the previous visualizations demonstrate that wealth alone cannot fully explain global differences in happiness, Sub-Saharan Africa illustrates this pattern particularly clearly. Countries within the region often share similar levels of economic prosperity yet report markedly different levels of happiness, even after accounting for the key determinants included in the World Happiness Report.</p>
+  <p>To examine these differences, this analysis focuses on residual happiness rather than raw happiness scores. Residual happiness is the portion of a country's reported well-being that remains unexplained after accounting for six predictors: logged GDP per capita, social support, healthy life expectancy, freedom to make life choices, generosity, and perceptions of corruption.</p>
+  <p>The model estimates a country's expected happiness using these factors and Dystopia, a hypothetical country/baseline representing the lowest observed values for each predictor. The difference between this predicted summation and a country's actual reported happiness is its residual. Positive residuals indicate higher-than-expected happiness, while negative residuals indicate lower-than-expected happiness. Because residual happiness captures variation beyond what the model explains, it provides a useful lens for investigating the cultural, historical, and institutional influences on subjective well-being.</p>
+
+  <h3>Residual Happiness Mapped: Divergence in Sub-Saharan Africa</h3>
+  <p>To identify where these unexpected patterns occur, the following choropleth map visualizes residual happiness across the globe.</p>
+
+  <div class="map-slot reveal" id="map">
+    <h4><img src="assets/img/ac-icons/icon-map.svg" alt="" class="slot-icon">Figure 1</h4>
+    <p>Choropleth map showing countries happier or less happy than predicted by measured determinants.</p>
   </div>
+
+  <p>This choropleth map, created in Tableau extracting country-level data from the World Happiness Report 2020, uses colors and shades to represent Residual (+/-) values across regions. This type was chosen because it highlights geographic patterns and regional variation that are difficult to identify through summary statistics alone. By mapping these residuals rather than raw happiness scores, the visualization reveals where subjective well-being exceeds or falls short of expectations, highlighting regions that warrant closer investigation.</p>
+  <p>Countries shaded in blue report higher happiness than predicted, while countries shaded in orange report lower happiness than expected. Positive residuals appear across much of North America, Latin America, Western Europe, and Oceania, whereas several countries in South Asia, Eastern Europe, and parts of Southern Africa exhibit negative residuals. However, the map reveals that substantial geographic variation in happiness remains even after accounting for major determinants of well-being.</p>
+  <p>One notable finding is the heterogeneity within Sub-Saharan Africa: Niger (residual = +1.045) exhibits a strongly positive residual, while Botswana (residual = -1.715), Zambia, and Zimbabwe display strongly negative residuals. This contrast suggests that similar structural conditions do not necessarily produce similar experiences of well-being and points to the potential influence of unmeasured factors such as cultural values, community networks, and social cohesion. These patterns challenge simplified regional narratives and demonstrate the limitations of relying solely on quantitative indicators to explain happiness.</p>
+  <p>This map reflects Richard White's (2010) argument that spatial visualization is a method of research rather than simply a means of presenting findings. By mapping residual happiness instead of raw happiness scores, the visualization reveals unexpected patterns, such as the coexistence of strongly positive and strongly negative residuals within Sub-Saharan Africa that would be obscured by regional averages. As Presner and Shepard (2016) argue, geospatial analysis enables researchers to uncover spatial relationships and challenge dominant interpretations; in this case, the map complicates the assumption that countries with similar economic and social conditions will experience similar levels of well-being.</p>
+
+  <h3>Case Study: Ivory Coast and Zambia</h3>
+  <p>To better understand this divergence, this case study compares Ivory Coast and Zambia. Although the two countries have virtually identical levels of economic prosperity, with logged GDP per capita values of 8.226 and 8.225, respectively, they report significantly different levels of subjective well-being. Ivory Coast records a Ladder Score of 5.233 and a positive residual happiness score of +1.109, indicating that people report substantially higher well-being than predicted by the World Happiness Report model. In contrast, Zambia records a Ladder Score of 3.759 and a negative residual of -0.838, suggesting that reported well-being falls considerably below model predictions. By examining their contrasting outcomes, this analysis explores how social, cultural, historical, and institutional factors may shape subjective well-being beyond what economic indicators alone can explain.</p>
 
   <div class="stat-callout reveal">
     <div class="stat-card">
@@ -163,11 +173,20 @@
       </ul>
     </div>
   </div>
-  <p><em>Nearly identical GDP per capita, but a 1.9-point gap in reported happiness — why?</em></p>
 
-  <div class="map-slot reveal" id="map">
-    <h4><img src="assets/img/ac-icons/icon-map.svg" alt="" class="slot-icon">Map</h4>
-    <p>World map (choropleth) shading each country by its GDP-prediction gap — the visual anchor for the Sub-Saharan Africa argument.</p>
+  <figure class="viz-figure reveal">
+    <img src="https://i.postimg.cc/YCxLVdsp/06-sub-saharan-africa-case-studies.png" alt="Country-level detail chart for Sub-Saharan African case studies, Ivory Coast and Zambia">
+    <figcaption>Figure 2. Examples of varying residuals found within Sub-Saharan Africa. Data on Ivory Coast on the left and data on Zambia on the right.</figcaption>
+  </figure>
+
+  <p>Historical context provides one possible explanation for this divergence. As illustrated in the accompanying TimelineJS, Ivory Coast and Zambia followed distinctly different political and social trajectories in the decade preceding the 2020 World Happiness Report. Schyns (1998) argues that individuals evaluate their lives through social comparison rather than objective living conditions alone. From this perspective, Ivory Coast's transition from political conflict to economic recovery, increasing stability, and the resurgence of community-based support networks such as tontines, which are informal mutual aid associations that reinforce trust and reciprocity, may have fostered a sense of collective progress, leading people to evaluate their lives more positively than economic indicators alone would predict.</p>
+  <p>Zambia, by contrast, experienced political instability alongside prolonged droughts that disrupted agricultural livelihoods and strained community support systems. Rather than reinforcing perceptions of recovery, these cumulative pressures likely contributed to lower life evaluations despite comparable levels of economic prosperity. As Tov and Diener (2009) argue, subjective well-being is shaped not only by universal human needs but also by the historical and cultural contexts through which people interpret their experiences.</p>
+  <p>Although these contrasting trajectories are not directly captured by the World Happiness Report's six explanatory variables, they help explain why two countries with nearly identical logged GDP per capita entered the 2020 survey with juxtaposing residual happiness scores. The comparison suggests that subjective well-being is influenced not only by material conditions but also by how societies experience recovery, stability, and social cohesion over time.</p>
+
+  <div class="timeline-slot reveal">
+    <h4>Ivory Coast &amp; Zambia — political/social timeline</h4>
+    <p>Embed a TimelineJS comparing Ivory Coast's and Zambia's trajectories in the decade before the 2020 report (Ivory Coast: post-conflict recovery, tontine resurgence · Zambia: political instability, drought impact on agriculture).</p>
+    <p style="font-size:0.85rem; opacity:0.75;">Replace this block with an &lt;iframe&gt; embed once the timeline is built: <br><code>&lt;iframe src="YOUR_TIMELINE_EMBED_URL" width="100%" height="500" frameborder="0"&gt;&lt;/iframe&gt;</code></p>
   </div>
 
   <h2 id="conclusion">Conclusion</h2>
