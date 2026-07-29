@@ -120,17 +120,37 @@
   </div>
 
   <!-- ===================== RQ2 ===================== -->
-  <h2 id="rq2">Research Question 2: What explains the gap?</h2>
-  <div class="viz-grid reveal">
-    <figure class="viz-figure">
-      <img src="https://i.postimg.cc/0QC8547C/Bar-Chart.png" alt="Bar chart of happiness determinants — log GDP, freedom, generosity, healthy life expectancy, and social support — broken down by region">
-      <figcaption>Happiness determinants by region: log GDP, freedom, generosity, healthy life expectancy, and social support.</figcaption>
-    </figure>
-    <figure class="viz-figure">
-      <img src="https://i.postimg.cc/1X5y8KKG/Positive-Affect.png" alt="Treemap of positive affect summed by region">
-      <figcaption>Positive affect (2018), summed by region.</figcaption>
-    </figure>
+  <h2 id="rq2">Beyond income, how do social factors help explain differences in happiness? The African Well-being Paradox</h2>
+  <p>Wealth isn't the whole story. The World Happiness Report proposes several social determinants that may influence well-being beyond income. This section investigates whether different combinations of economic and social factors help explain regional differences in happiness, with particular attention to Sub-Saharan Africa.</p>
+
+  <div class="viz-slot reveal">
+    <h4>Figure 1 — image link needed</h4>
+    <p>Dashboard: four scatter panels (social support, freedom to make life choices, generosity, perceptions of corruption vs. average ladder score), bubble size = GDP per capita, color = region. Send the image link and I'll drop it in here.</p>
   </div>
+
+  <p>This dashboard examines how social factors are correlated with differences in ladder scores. It focuses on social support, freedom to make life choices, generosity, and perception of corruption. The bubble size represents the GDP per capita and the color represents the world regions. These trends suggest that there are factors associated with happiness other than GDP per capita, which could represent economic prosperity. Social support displays the clearest positive pattern, which could mean that countries where people have people to rely on report higher happiness results. Freedom to make life choices also shows a strong upward trend. However, generosity has a relatively flat trend line with sparse circles, suggesting that generosity might not clearly correspond to happiness. Perception of corruption is negatively correlated with the ladder score: countries with higher perceived corruption generally have lower happiness scores.</p>
+
+  <p>Regional patterns reveal an important exception. Western Europe and North America cluster at higher levels of social support, freedom, and happiness, whereas Sub-Saharan African countries are more widely dispersed. Despite generally lower ladder scores, several countries in the region perform comparatively well on indicators such as freedom, suggesting that social factors may shape well-being differently than in other parts of the world. The following visualization explores this pattern by comparing how the major determinants contribute to predicted happiness across global regions.</p>
+
+  <figure class="viz-figure reveal">
+    <img src="https://i.postimg.cc/0QC8547C/Bar-Chart.png" alt="Bar chart of happiness determinants — log GDP, freedom, generosity, healthy life expectancy, and social support — broken down by region">
+    <figcaption>Figure 2. Bar Chart of Happiness Determinants by Region</figcaption>
+  </figure>
+
+  <p>This faceted bar chart compares the average contributions of five determinants — logged GDP per capita, social support, healthy life expectancy, freedom to make life choices, and generosity — to predicted happiness across major world regions. Rather than displaying the raw values of these variables, the chart uses the World Happiness Report's "Explained by:" estimates, which quantify how much each factor contributes to regional ladder scores. By displaying each determinant in a separate panel, the visualization enables clear comparisons between regions without the clutter of grouped bar charts, making it easier to identify how different factors shape subjective well-being across geographic contexts.</p>
+
+  <p>Western Europe consistently shows the largest contributions from GDP per capita and healthy life expectancy, while Latin America and the Caribbean receive comparatively larger contributions from social support. Sub-Saharan Africa, however, presents a distinctive pattern: despite relatively smaller contributions from GDP per capita and healthy life expectancy, it exhibits comparatively larger contributions from generosity and freedom to make life choices. These patterns suggest that there is no single pathway to happiness. While material prosperity remains an important contributor to life evaluations, social and cultural resources also appear to play a meaningful role in shaping well-being. This finding supports Diener et al.'s distinction between material prosperity and psychosocial prosperity, suggesting that social relationships can contribute to happiness even where economic resources are more limited. These regional differences lay the foundation for the African Well-Being Paradox, explored in the following visualization through patterns of positive affect.</p>
+
+  <figure class="viz-figure reveal">
+    <img src="https://i.postimg.cc/1X5y8KKG/Positive-Affect.png" alt="Treemap of positive affect summed by region">
+    <figcaption>Figure 3. Treemap of Positive Affect Across Regions</figcaption>
+  </figure>
+
+  <p>This treemap visualizes the distribution of positive affect across world regions, with each rectangle representing a region and its size corresponding to its overall positive affect score. Unlike life evaluations, which measure people's overall assessment of their lives, positive affect captures the frequency of everyday positive emotions such as enjoyment, laughter, and interest. The visualization reveals a striking pattern: Sub-Saharan Africa occupies the largest area, indicating the highest overall positive affect despite the region's comparatively low contributions from GDP per capita in the previous analysis.</p>
+
+  <p>This apparent contradiction reflects what Greyling, Rossouw, and Burger (2026) describe as the African Well-Being Paradox — the coexistence of high daily positive emotions alongside relatively low life evaluations. Rather than suggesting that Africans conceptualize happiness differently, the authors argue that this gap emerges because psychological and social resources interact with local economic conditions. While poverty and limited opportunities reduce people's evaluations of their lives, strong social support, community belonging, spirituality, and interpersonal relationships continue to sustain positive emotional experiences. This interpretation complements the previous visualization, which showed that Sub-Saharan Africa receives comparatively larger contributions from generosity and freedom to make life choices than would be expected from its level of economic prosperity. Together, these findings suggest that material prosperity and psychosocial prosperity represent distinct dimensions of well-being: income and health strongly influence how people evaluate their lives, whereas social connectedness and community engagement help sustain positive everyday experiences. The African Well-Being Paradox therefore demonstrates that social factors can explain important differences in happiness beyond what economic indicators alone are able to capture.</p>
+
+  <p>Overall, these findings answer the research question by demonstrating that social factors help explain differences in happiness beyond income. While economic prosperity remains important for overall life satisfaction, community belonging, social support, and strong interpersonal relationships can sustain positive emotional well-being even under conditions of material hardship, illustrating that happiness is influenced by both economic and social dimensions of life.</p>
 
   <h2 id="rq3">Why does Sub-Saharan Africa show some of the widest, and most debated, divergence between predicted and reported happiness? A Case Study on the Ivory Coast &amp; Zambia.</h2>
 
@@ -181,7 +201,9 @@
 
   <p>Historical context provides one possible explanation for this divergence. As illustrated in the accompanying TimelineJS, Ivory Coast and Zambia followed distinctly different political and social trajectories in the decade preceding the 2020 World Happiness Report. Schyns (1998) argues that individuals evaluate their lives through social comparison rather than objective living conditions alone. From this perspective, Ivory Coast's transition from political conflict to economic recovery, increasing stability, and the resurgence of community-based support networks such as tontines, which are informal mutual aid associations that reinforce trust and reciprocity, may have fostered a sense of collective progress, leading people to evaluate their lives more positively than economic indicators alone would predict.</p>
   <p>Zambia, by contrast, experienced political instability alongside prolonged droughts that disrupted agricultural livelihoods and strained community support systems. Rather than reinforcing perceptions of recovery, these cumulative pressures likely contributed to lower life evaluations despite comparable levels of economic prosperity. As Tov and Diener (2009) argue, subjective well-being is shaped not only by universal human needs but also by the historical and cultural contexts through which people interpret their experiences.</p>
-  <p>Although these contrasting trajectories are not directly captured by the World Happiness Report's six explanatory variables, they help explain why two countries with nearly identical logged GDP per capita entered the 2020 survey with juxtaposing residual happiness scores. The comparison suggests that subjective well-being is influenced not only by material conditions but also by how societies experience recovery, stability, and social cohesion over time.</p>
+  <p>Although these contrasting trajectories are not directly captured by the World Happiness Report's six explanatory variables, they help explain why two countries with nearly identical logged GDP per capita entered the 2020 survey with juxtaposing residual happiness scores.</p>
+
+  <p>In conclusion, the comparison suggests that Sub-Saharan Africa exhibits some of the widest divergence between predicted and reported happiness because countries with similar economic conditions often possess profoundly different historical trajectories, social institutions, and community relationships. The contrasting experiences of Ivory Coast and Zambia demonstrate that residual happiness captures meaningful aspects of subjective well-being that extend beyond GDP, health, freedom, and other conventional indicators. Rather than representing unexplained error, these residuals reveal the influence of historical recovery, institutional trust, and social cohesion on how people evaluate their lives.</p>
 
   <div class="timeline-slot reveal">
     <h4>Ivory Coast &amp; Zambia — political/social timeline</h4>
