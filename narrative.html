@@ -109,23 +109,61 @@
   <!-- ===================== RQ1 ===================== -->
   <h2 id="rq1">Research Question 1: How well does GDP predict happiness?</h2>
   <div class="viz-grid reveal">
-    <div class="viz-slot"><h4>Visualization 1</h4><p>Scatter plot: logged GDP per capita vs. ladder score, all countries, with a fitted prediction line.</p></div>
-    <div class="viz-slot"><h4>Visualization 2</h4><p>Residual chart: countries ranked by gap between actual and predicted ladder score.</p></div>
+    <figure class="viz-figure">
+      <img src="https://i.postimg.cc/3xhDnsnr/01-gdp-predicts-happiness.png" alt="Scatter plot of logged GDP per capita vs. ladder score with fitted prediction line">
+      <figcaption>Logged GDP per capita vs. ladder score, all countries, with a fitted prediction line.</figcaption>
+    </figure>
+    <figure class="viz-figure">
+      <img src="https://i.postimg.cc/VkwbDxDv/02-ranked-country-prediction-gaps.png" alt="Bar chart ranking countries by gap between actual and predicted ladder score">
+      <figcaption>Countries ranked by the gap between actual and GDP-predicted ladder score.</figcaption>
+    </figure>
   </div>
 
   <!-- ===================== RQ2 ===================== -->
   <h2 id="rq2">Research Question 2: What explains the gap?</h2>
   <div class="viz-grid reveal">
-    <div class="viz-slot"><h4>Visualization 3</h4><p>Small multiples: social support, freedom, and generosity vs. residual (GDP-prediction gap).</p></div>
-    <div class="viz-slot"><h4>Visualization 4</h4><p>Stacked bar or radar chart comparing the six WHR factors for a handful of over/under-performing countries.</p></div>
+    <figure class="viz-figure">
+      <img src="https://i.postimg.cc/dV9ZX5xF/03-social-factors-vs-prediction-gap.png" alt="Small multiples of social support, freedom, and generosity plotted against the prediction gap">
+      <figcaption>Social support, freedom, and generosity vs. the GDP-prediction gap.</figcaption>
+    </figure>
+    <figure class="viz-figure">
+      <img src="https://i.postimg.cc/jShn9MFr/04-factor-profiles-selected-countries.png" alt="Chart comparing the six World Happiness Report factors across selected over- and under-performing countries">
+      <figcaption>The six WHR factors compared across a handful of over/under-performing countries.</figcaption>
+    </figure>
   </div>
 
   <!-- ===================== RQ3 ===================== -->
   <h2 id="rq3">Research Question 3: Sub-Saharan Africa's divergence</h2>
   <div class="viz-grid reveal">
-    <div class="viz-slot"><h4>Visualization 5</h4><p>Regional comparison chart: average GDP-prediction gap by world region, Sub-Saharan Africa highlighted.</p></div>
-    <div class="viz-slot"><h4>Visualization 6 (optional / 5th+)</h4><p>Country-level detail chart for a small set of Sub-Saharan African case studies.</p></div>
+    <figure class="viz-figure">
+      <img src="https://i.postimg.cc/fRvSF8rN/05-average-prediction-gap-by-region.png" alt="Bar chart of average GDP-prediction gap by world region, Sub-Saharan Africa highlighted">
+      <figcaption>Average GDP-prediction gap by world region, Sub-Saharan Africa highlighted.</figcaption>
+    </figure>
+    <figure class="viz-figure">
+      <img src="https://i.postimg.cc/YCxLVdsp/06-sub-saharan-africa-case-studies.png" alt="Country-level detail chart for Sub-Saharan African case studies, Ivory Coast and Zambia">
+      <figcaption>Case study: Ivory Coast and Zambia — nearly identical GDP, very different outcomes.</figcaption>
+    </figure>
   </div>
+
+  <div class="stat-callout reveal">
+    <div class="stat-card">
+      <h5>Ivory Coast</h5>
+      <ul>
+        <li>Logged GDP per capita: 8.226</li>
+        <li>Ladder score: 5.233</li>
+        <li>Residual happiness: +1.109</li>
+      </ul>
+    </div>
+    <div class="stat-card">
+      <h5>Zambia</h5>
+      <ul>
+        <li>Logged GDP per capita: 8.225</li>
+        <li>Ladder score: 3.759</li>
+        <li>Residual happiness: −0.838</li>
+      </ul>
+    </div>
+  </div>
+  <p><em>Nearly identical GDP per capita, but a 1.9-point gap in reported happiness — why?</em></p>
 
   <div class="map-slot reveal" id="map">
     <h4><img src="assets/img/ac-icons/icon-map.svg" alt="" class="slot-icon">Map</h4>
