@@ -529,6 +529,27 @@ section { padding: 20px 0; }
 
 .viz-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
 
+/* ---------- real embeds (Tableau dashboards, TimelineJS) — same
+   breakout sizing as viz-figure so they're legible, not the dashed
+   placeholder look since these are live content ---------- */
+.embed-frame {
+  border-radius: var(--ac-radius);
+  overflow: hidden;
+  box-shadow: var(--ac-shadow);
+  margin: 26px 0;
+  width: 100%;
+  max-width: 900px;
+}
+@media (min-width: 960px) {
+  .embed-frame {
+    width: 90vw;
+    max-width: 900px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.embed-frame iframe { display: block; width: 100%; border: 0; }
+
 /* ---------- delivered visualizations — solid card, not the dashed
    placeholder look, since these are real finished charts now ---------- */
 .viz-figure {
@@ -536,9 +557,19 @@ section { padding: 20px 0; }
   border: 1.5px solid var(--ac-border);
   border-radius: var(--ac-radius);
   box-shadow: var(--ac-shadow);
-  padding: 14px;
+  padding: 16px;
   margin: 26px 0;
   text-align: center;
+  width: 100%;
+  max-width: 900px;
+}
+@media (min-width: 960px) {
+  .viz-figure {
+    width: 90vw;
+    max-width: 900px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .viz-figure img {
   width: 100%;
@@ -549,9 +580,9 @@ section { padding: 20px 0; }
 .viz-figure figcaption {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--ac-text);
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 /* small factual callout for concrete data points (case-study stats etc) */
