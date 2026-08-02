@@ -544,7 +544,7 @@ section { padding: 20px 0; }
   .embed-frame {
     width: 90vw;
     max-width: 900px;
-    margin-left: 50%;
+    margin-left: 50vw;
     transform: translateX(-50%);
   }
 }
@@ -591,7 +591,7 @@ section { padding: 20px 0; }
   .viz-figure {
     width: 90vw;
     max-width: 900px;
-    margin-left: 50%;
+    margin-left: 50vw;
     transform: translateX(-50%);
   }
 }
