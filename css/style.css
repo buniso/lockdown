@@ -1,6 +1,6 @@
 /* ============================================================
    THE LOCKDOWN INDEX — style system
-   2019–2020, animal crossing aesthetic
+   2019–2020, disposable-camera flash, scrapbook-collage aesthetic
    built around the World Happiness Report's ladder score.
    ============================================================ */
 
@@ -539,8 +539,27 @@ section { padding: 20px 0; }
   box-shadow: var(--ac-shadow);
   margin: 26px 0;
   width: 100%;
+  /* Firefox */
+  scrollbar-width: auto;
+  scrollbar-color: var(--ac-teal) var(--ac-bg2);
 }
+/* Chrome / Safari / Edge — make the horizontal scrollbar big and colored
+   instead of the thin default, since this is the primary way to pan a
+   wider-than-container embed like the Tableau dashboard */
+.embed-frame::-webkit-scrollbar { height: 14px; }
+.embed-frame::-webkit-scrollbar-track { background: var(--ac-bg2); border-radius: 999px; }
+.embed-frame::-webkit-scrollbar-thumb { background: var(--ac-teal); border-radius: 999px; border: 3px solid var(--ac-bg2); }
+.embed-frame::-webkit-scrollbar-thumb:hover { background: #2e93a1; }
 .embed-frame iframe { display: block; width: 100%; border: 0; }
+
+.scroll-hint {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--ac-text);
+  text-align: center;
+  margin: -14px 0 22px;
+}
 
 /* Tableau's own embed script force-sets its <object>/iframe to a fixed
    1200px width via inline styles once it loads. !important in an author
