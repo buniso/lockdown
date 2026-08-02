@@ -548,7 +548,31 @@ section { padding: 20px 0; }
     transform: translateX(-50%);
   }
 }
+/* the AC menu (narrative page only) is fixed to the right, ~250px wide
+   including its margin — once it's actually visible, nudge breakout
+   figures left so they clear it instead of sliding underneath */
+@media (min-width: 1140px) {
+  .embed-frame { transform: translateX(calc(-50% - 125px)); }
+}
 .embed-frame iframe { display: block; width: 100%; border: 0; }
+
+/* collapsible source/credit lists (timeline sources, photo credits) —
+   unobtrusive by default, expand on click */
+.source-list {
+  margin: 8px 0 26px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.82rem;
+  color: var(--ac-text2);
+}
+.source-list summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--ac-text);
+  padding: 6px 0;
+}
+.source-list ol { margin: 8px 0 0; padding-left: 22px; }
+.source-list li { margin-bottom: 4px; }
+.source-list a { text-decoration-color: var(--ac-border); }
 
 /* ---------- delivered visualizations — solid card, not the dashed
    placeholder look, since these are real finished charts now ---------- */
@@ -570,6 +594,9 @@ section { padding: 20px 0; }
     margin-left: 50%;
     transform: translateX(-50%);
   }
+}
+@media (min-width: 1140px) {
+  .viz-figure { transform: translateX(calc(-50% - 125px)); }
 }
 .viz-figure img {
   width: 100%;
