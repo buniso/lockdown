@@ -542,9 +542,11 @@ section { padding: 20px 0; }
 }
 @media (min-width: 960px) {
   .embed-frame {
+    position: relative;
     width: 90vw;
     max-width: 900px;
-    margin-left: 50vw;
+    left: 50%;
+    margin-left: 0;
     transform: translateX(-50%);
   }
 }
@@ -589,9 +591,11 @@ section { padding: 20px 0; }
 }
 @media (min-width: 960px) {
   .viz-figure {
+    position: relative;
     width: 90vw;
     max-width: 900px;
-    margin-left: 50vw;
+    left: 50%;
+    margin-left: 0;
     transform: translateX(-50%);
   }
 }
