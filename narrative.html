@@ -86,8 +86,6 @@
   <p>When discussing people's satisfaction with their lives, we consider money, freedom, safety, employment status, etc. However, sometimes we never know what people's lives are like in different regions. There are constant discussions about certain areas' GDP and determining people's life satisfaction; without a doubt, it is superficial, but how do we know what makes us happy? The World Happiness Report researched citizens' responses to happiness by conducting a survey individually. Each respondent ranked their happiness and satisfaction with their own life from worst (0) to best (10), which are called ladder scores. The research examines what the ladder scores capture, what affects them, and what is not represented. Wealth certainly captures and predicts happiness, but it does not fully explain it. Logged GDP per capita is one of the strongest metrics of a country's average ladder score, yet social support, freedom, and generosity account for much of the variation. For example, Sub-Saharan Africa, where scores diverge moderately from economic situations, places more weight on other metrics such as cultural difference and social connectedness.</p>
   <p>Our data come from the World Happiness Report 2020, published by the UN Sustainable Development Network, which was sourced from the Gallup World Poll Surveys with the Cantril-ladder scores, along with other variables such as logged GDP per capita, social support, and healthy life expectancy, freedom to make life choices, generosity, and perceptions of corruption, etc. The data set provides a relatively subjective and standardized measure of a country's situation that can help us analyze what happiness entails and the limitations of the standardized variables.</p>
 
-
-
   <!-- ===================== LIT REVIEW ===================== -->
   <h2 id="lit-review">Literature Review</h2>
   <p><em>— section lead: Xinyi</em></p>
@@ -103,24 +101,44 @@
 
   <!-- ===================== RQ1 ===================== -->
   <h2 id="rq1">Research Question 1: How well does GDP predict happiness?</h2>
-  <div class="viz-grid reveal">
-    <figure class="viz-figure">
-      <img src="https://i.postimg.cc/3xhDnsnr/01-gdp-predicts-happiness.png" alt="Scatter plot of logged GDP per capita vs. ladder score with fitted prediction line">
-      <figcaption>Logged GDP per capita vs. ladder score, all countries, with a fitted prediction line.</figcaption>
-    </figure>
-    <figure class="viz-figure">
-      <img src="https://i.postimg.cc/VkwbDxDv/02-ranked-country-prediction-gaps.png" alt="Bar chart ranking countries by gap between actual and predicted ladder score">
-      <figcaption>Countries ranked by the gap between actual and GDP-predicted ladder score.</figcaption>
-    </figure>
-  </div>
+
+  <h3>The Common Assumption</h3>
+  <p>When reviewing the six factors that the World Happiness Report contributes most to a person's ladder score, a natural inference to make is that wealth is the key to happiness given all of the resources it can afford someone. Higher economic output grants better healthcare, quality education, safe living conditions, and more personal autonomy. It allows nations to invest into their infrastructure and public programs, providing their citizens with secure environments and any assistance they may need. For these reasons, gross domestic product (GDP), the total monetary market value of all final goods and services made inside a country during a set time, is seen as a strong baseline for measuring human progress and satisfaction. To test this relationship, we created a scatterplot that compares the logged GDP per capita and ladder score of each country (Figure 1).</p>
+
+  <figure class="viz-figure reveal">
+    <img src="https://i.postimg.cc/3xhDnsnr/01-gdp-predicts-happiness.png" alt="Scatter plot of logged GDP per capita vs. ladder score with fitted prediction line, colored by world region">
+    <figcaption>Figure 1: Scatterplot of logged GDP per capita and happiness score for every country, colored by world region.</figcaption>
+  </figure>
+
+  <h3>The Correlation</h3>
+  <p>The scatterplot in Figure 1 provides strong support for this assumption. Each point represents a country, plotted according to its logged GDP per capita and its self-reported happiness score, or "ladder score," from the World Happiness Report. The dashed trend line reveals a clear positive relationship: as logged GDP per capita increases, happiness scores tend to rise as well. This relationship is further confirmed by the correlation coefficient of 0.78, indicating a strong positive association between economic prosperity and reported well-being. Wealthier nations, such as Finland and the United States, cluster consistently near the top of the happiness scale, reinforcing the idea that greater economic resources translate into higher levels of life satisfaction. Countries across nearly every world region follow this general upward trend, suggesting that the link between GDP and happiness holds fairly broadly rather than being limited to a specific part of the world.</p>
+
+  <h3>The Outliers</h3>
+  <p>Despite this strong overall trend, GDP alone does not fully account for the differences in happiness across countries, and several notable outliers illustrate the limits of its predictive power. Costa Rica, for example, reports a happiness score well above what its GDP per capita would predict, suggesting that factors beyond economic output, such as strong social support systems, life expectancy, or a sense of community, may play a significant role in its citizens' well-being. Conversely, Botswana falls below the trend line despite having a relatively higher GDP per capita, indicating that economic growth alone does not guarantee proportional gains in happiness. Afghanistan represents another important deviation, sitting near the bottom of both the GDP and happiness scales, which may reflect how factors such as political instability, conflict, and lack of basic security can suppress happiness independent of economic measures. These outliers demonstrate that while GDP correlates strongly with happiness on average, it is an incomplete predictor, and other social, political, and psychological factors must be considered to fully explain a country's level of well-being.</p>
+
+  <figure class="viz-figure reveal">
+    <img src="https://i.postimg.cc/VkwbDxDv/02-ranked-country-prediction-gaps.png" alt="Bar chart ranking countries by gap between actual and predicted ladder score, green for higher-than-predicted and red for lower-than-predicted">
+    <figcaption>Figure 2: Countries ranked by the gap between actual and GDP-predicted ladder score. Largest positive gaps: Costa Rica, Finland, Nicaragua, Niger, Guatemala. Largest negative gaps: Botswana, Afghanistan, India, Egypt, South Sudan.</figcaption>
+  </figure>
+
+  <p>To understand why GDP falls short as an absolute predictor of well-being, we must look closer at the other factors that influence happiness and examine the impact they can make.</p>
 
   <!-- ===================== RQ2 ===================== -->
   <h2 id="rq2">Beyond income, how do social factors help explain differences in happiness? The African Well-being Paradox</h2>
   <p>Wealth isn't the whole story. The World Happiness Report proposes several social determinants that may influence well-being beyond income. This section investigates whether different combinations of economic and social factors help explain regional differences in happiness, with particular attention to Sub-Saharan Africa.</p>
 
-  <div class="viz-slot reveal">
-    <h4>Figure 1 — image link needed</h4>
-    <p>Dashboard: four scatter panels (social support, freedom to make life choices, generosity, perceptions of corruption vs. average ladder score), (need to upload img to drive).</p>
+  <div class="embed-frame reveal" style="overflow-x:auto;">
+    <div class='tableauPlaceholder' id='viz1785535046999' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SocialFactorAndLadder&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SocialFactorAndLadder&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SocialFactorAndLadder&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1785535046999');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='827px';}
+      else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='827px';}
+      else { vizElement.style.width='100%';vizElement.style.height='1277px';}
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
   </div>
 
   <p>This dashboard examines how social factors are correlated with differences in ladder scores. It focuses on social support, freedom to make life choices, generosity, and perception of corruption. The bubble size represents the GDP per capita and the color represents the world regions. These trends suggest that there are factors associated with happiness other than GDP per capita, which could represent economic prosperity. Social support displays the clearest positive pattern, which could mean that countries where people have people to rely on report higher happiness results. Freedom to make life choices also shows a strong upward trend. However, generosity has a relatively flat trend line with sparse circles, suggesting that generosity might not clearly correspond to happiness. Perception of corruption is negatively correlated with the ladder score: countries with higher perceived corruption generally have lower happiness scores.</p>
@@ -157,10 +175,10 @@
   <h3>Residual Happiness Mapped: Divergence in Sub-Saharan Africa</h3>
   <p>To identify where these unexpected patterns occur, the following choropleth map visualizes residual happiness across the globe.</p>
 
-  <div class="map-slot reveal" id="map">
-    <h4><img src="assets/img/ac-icons/icon-map.svg" alt="" class="slot-icon">Figure 1</h4>
-    <p>Choropleth map showing (need to upload img to drive).</p>
-  </div>
+  <figure class="viz-figure reveal" id="map">
+    <img src="https://i.postimg.cc/mk2TPSSw/Map.png" alt="Choropleth map showing countries happier or less happy than predicted by measured determinants, with Ivory Coast and Zambia detail callouts">
+    <figcaption>Figure 1. Choropleth map showing countries happier or less happy than predicted by measured determinants.</figcaption>
+  </figure>
 
   <p>This choropleth map, created in Tableau extracting country-level data from the World Happiness Report 2020, uses colors and shades to represent Residual (+/-) values across regions. This type was chosen because it highlights geographic patterns and regional variation that are difficult to identify through summary statistics alone. By mapping these residuals rather than raw happiness scores, the visualization reveals where subjective well-being exceeds or falls short of expectations, highlighting regions that warrant closer investigation.</p>
   <p>Countries shaded in blue report higher happiness than predicted, while countries shaded in orange report lower happiness than expected. Positive residuals appear across much of North America, Latin America, Western Europe, and Oceania, whereas several countries in South Asia, Eastern Europe, and parts of Southern Africa exhibit negative residuals. However, the map reveals that substantial geographic variation in happiness remains even after accounting for major determinants of well-being.</p>
@@ -189,26 +207,19 @@
     </div>
   </div>
 
-  <figure class="viz-figure reveal">
-    <img src="https://i.postimg.cc/mk2TPSSw/Map.png" alt="Country-level detail chart for Sub-Saharan African case studies, Ivory Coast and Zambia">
-    <figcaption>Figure 2. Examples of varying residuals found within Sub-Saharan Africa. Data on Ivory Coast on the left and data on Zambia on the right.</figcaption>
-  </figure>
+  <div class="embed-frame reveal">
+    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vS3lUqPD-gQhFkZ-KpsXfVJYmga9QdBJnc14385GjyHWM5nT4KMRBSAXMC0rTmuQeTV0NAKrKupe_hv&font=Default&lang=en&initial_zoom=2&width=100%25&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+  </div>
 
-  <p>Historical context provides one possible explanation for this divergence. As illustrated in the accompanying TimelineJS, Ivory Coast and Zambia followed distinctly different political and social trajectories in the decade preceding the 2020 World Happiness Report. Schyns (1998) argues that individuals evaluate their lives through social comparison rather than objective living conditions alone. From this perspective, Ivory Coast's transition from political conflict to economic recovery, increasing stability, and the resurgence of community-based support networks such as tontines, which are informal mutual aid associations that reinforce trust and reciprocity, may have fostered a sense of collective progress, leading people to evaluate their lives more positively than economic indicators alone would predict.</p>
+  <p>Historical context provides one possible explanation for this divergence. As illustrated in the accompanying TimelineJS above, Ivory Coast and Zambia followed distinctly different political and social trajectories in the decade preceding the 2020 World Happiness Report. Schyns (1998) argues that individuals evaluate their lives through social comparison rather than objective living conditions alone. From this perspective, Ivory Coast's transition from political conflict to economic recovery, increasing stability, and the resurgence of community-based support networks such as tontines, which are informal mutual aid associations that reinforce trust and reciprocity, may have fostered a sense of collective progress, leading people to evaluate their lives more positively than economic indicators alone would predict.</p>
   <p>Zambia, by contrast, experienced political instability alongside prolonged droughts that disrupted agricultural livelihoods and strained community support systems. Rather than reinforcing perceptions of recovery, these cumulative pressures likely contributed to lower life evaluations despite comparable levels of economic prosperity. As Tov and Diener (2009) argue, subjective well-being is shaped not only by universal human needs but also by the historical and cultural contexts through which people interpret their experiences.</p>
   <p>Although these contrasting trajectories are not directly captured by the World Happiness Report's six explanatory variables, they help explain why two countries with nearly identical logged GDP per capita entered the 2020 survey with juxtaposing residual happiness scores.</p>
 
   <p>In conclusion, the comparison suggests that Sub-Saharan Africa exhibits some of the widest divergence between predicted and reported happiness because countries with similar economic conditions often possess profoundly different historical trajectories, social institutions, and community relationships. The contrasting experiences of Ivory Coast and Zambia demonstrate that residual happiness captures meaningful aspects of subjective well-being that extend beyond GDP, health, freedom, and other conventional indicators. Rather than representing unexplained error, these residuals reveal the influence of historical recovery, institutional trust, and social cohesion on how people evaluate their lives.</p>
 
-  <div class="timeline-slot reveal">
-    <h4>Ivory Coast &amp; Zambia — political/social timeline</h4>
-    <p>Embed a TimelineJS comparing Ivory Coast's and Zambia's trajectories in the decade before the 2020 report (Ivory Coast: post-conflict recovery, tontine resurgence · Zambia: political instability, drought impact on agriculture).</p>
-    <p style="font-size:0.85rem; opacity:0.75;">Replace this block with an &lt;iframe&gt; embed once the timeline is built: <br><code>&lt;iframe src="YOUR_TIMELINE_EMBED_URL" width="100%" height="500" frameborder="0"&gt;&lt;/iframe&gt;</code></p>
-  </div>
-
   <h2 id="conclusion">Conclusion</h2>
   <div class="card card-lifted reveal">
-    <p><em>Placeholder — tie the three research questions back to the thesis: happiness is not reducible to GDP, and the sharpest evidence for that is the Sub-Saharan African "happiness paradox."</em></p>
+    <p>Across all these research questions, the same pattern kept emerging: GDP is a strong predictor of happiness, but it is not the full picture. Countries like Costa Rica, Finland, and Niger all report higher happiness than their GDP alone would predict, while countries like Afghanistan and Botswana fall below what their economic numbers suggest. Our case study on Ivory Coast and Zambia made this especially clear — two countries with nearly identical GDP per capita but very different outcomes, shaped less by economics and more by political stability, community networks, and historical context. Together, these findings support our thesis: money can, to some extent, buy happiness, but it cannot fully explain it. As our data critique makes clear, no single standardized number can capture everything that it means for a country's people to live well.</p>
   </div>
 </section>
 
