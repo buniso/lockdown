@@ -534,7 +534,8 @@ section { padding: 20px 0; }
    placeholder look since these are live content ---------- */
 .embed-frame {
   border-radius: var(--ac-radius);
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: visible;
   box-shadow: var(--ac-shadow);
   margin: 26px 0;
   width: 100%;
