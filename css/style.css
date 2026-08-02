@@ -538,23 +538,6 @@ section { padding: 20px 0; }
   box-shadow: var(--ac-shadow);
   margin: 26px 0;
   width: 100%;
-  max-width: 900px;
-}
-@media (min-width: 960px) {
-  .embed-frame {
-    position: relative;
-    width: 90vw;
-    max-width: 900px;
-    left: 50%;
-    margin-left: 0;
-    transform: translateX(-50%);
-  }
-}
-/* the AC menu (narrative page only) is fixed to the right, ~250px wide
-   including its margin — once it's actually visible, nudge breakout
-   figures left so they clear it instead of sliding underneath */
-@media (min-width: 1140px) {
-  .embed-frame { transform: translateX(calc(-50% - 125px)); }
 }
 .embed-frame iframe { display: block; width: 100%; border: 0; }
 
@@ -583,24 +566,9 @@ section { padding: 20px 0; }
   border: 1.5px solid var(--ac-border);
   border-radius: var(--ac-radius);
   box-shadow: var(--ac-shadow);
-  padding: 16px;
+  padding: 14px;
   margin: 26px 0;
   text-align: center;
-  width: 100%;
-  max-width: 900px;
-}
-@media (min-width: 960px) {
-  .viz-figure {
-    position: relative;
-    width: 90vw;
-    max-width: 900px;
-    left: 50%;
-    margin-left: 0;
-    transform: translateX(-50%);
-  }
-}
-@media (min-width: 1140px) {
-  .viz-figure { transform: translateX(calc(-50% - 125px)); }
 }
 .viz-figure img {
   width: 100%;
