@@ -542,6 +542,18 @@ section { padding: 20px 0; }
 }
 .embed-frame iframe { display: block; width: 100%; border: 0; }
 
+/* Tableau's own embed script force-sets its <object>/iframe to a fixed
+   1200px width via inline styles once it loads. !important in an author
+   stylesheet beats a plain (non-!important) inline style, so this makes
+   it actually scale down to fit the card instead of overflowing. */
+.embed-frame object,
+.embed-frame .tableauViz {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 1200 / 827;
+}
+
 /* collapsible source/credit lists (timeline sources, photo credits) —
    unobtrusive by default, expand on click */
 .source-list {
